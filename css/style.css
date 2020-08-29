@@ -160,13 +160,13 @@ body {
     font-size: 22px;
 }
 
-.best-sellers .col-lg-3 img {
-    height: 400px;
+.best-sellers img {
+    height: 425px;
 }
 
-.featured-products .col-lg-4 img,
-.subscription .col-lg-4 img,
-.category-main .col-lg-6 img {
+.featured-products img,
+.subscription img,
+.category-main  img {
     height: 525px;
 }
 
@@ -174,6 +174,9 @@ body {
     height: 780px;
 }
 
+.may-like img {
+    height: 500px;
+}
 
 /* Button hover effect */
 
@@ -196,16 +199,14 @@ body {
 }
 
 .icons {
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+    text-align: center;
     position: absolute;
-    bottom: 25%;
-    left: 12%;
+    bottom: 20%;
 }
 
-.icons i {
-    font-size: 22px;
-    padding: 20px;
-    background-color: #fff;
-}
 
 /*-------------------------------------------------*/
 /* Category Page */
@@ -253,3 +254,92 @@ body {
 .heading-info {
     border-right: 1px solid #000;
 }
+
+@media(max-width: 576px) {
+
+    .heading-primary {
+        font-size: 24px;
+    }
+
+    .heading-secondary {
+        font-size: 22px;
+    }
+
+    h5, h6 {
+        font-size: 12px;
+    }
+    
+   
+    /* Image height */
+    .best-sellers img,
+    .featured-products img,
+    .subscription img,
+    .category-main img,
+    .our-products .col-lg-6 img {
+        height: 500px;
+    }
+
+    .category-main img {
+        height: 500px !important;
+    }
+
+    .social-list img {
+        width: 80%;
+    }
+
+    .footer__bottom img {
+        width: 100%;
+    }
+
+    .footer__bottom h3 {
+        font-size: 22px;
+    }
+
+    .footer__bottom li {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 900px) {
+    .carousel-caption {
+        display: none;
+    }
+
+    .category-main img {
+        height: 425px;
+    }
+}
+
+@media(max-width: 1200px) {
+
+    .header__topbar {
+        font-size: 65%;
+    }
+
+    .best-sellers img {
+        height: 525px;
+    }
+
+    .featured-products img,
+    .subscription img {
+        height: 425px;
+    }
+
+    .our-products .col-lg-6 img {
+        height: 525px;
+    }
+
+    .header nav .search-input {
+        width: 100%;
+    }
+
+    .navbar-light .navbar-nav .active>.nav-link {
+        border-bottom: 0;
+    }
+
+    .may-like img {
+        height: 650px;
+    }
+
+}
+
